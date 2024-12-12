@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Demetrius</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid vh-100 d-flex align-items-center justify-content-center">
+        <div class="row w-100">
+            <!-- Tela de Boas-Vindas -->
+            <div class="col-md-6 welcome-section d-flex flex-column justify-content-center align-items-center text-white">
+                <h1>Bem-vindo à Demetrius</h1>
+                <p>Seu parceiro no controle financeiro. Simplifique suas finanças e alcance seus objetivos com nossa plataforma intuitiva e poderosa.</p>
+            </div>
+            <!-- Tela de Cadastro -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="card shadow-lg">
+                    <div class="card-header text-center bg-primary text-white">
+                        <h2>Cadastro - Demetrius</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="cadastro-form">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="senha" required minlength="8">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-eye" id="toggleSenha" style="cursor: pointer;"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmar-senha">Confirmação de Senha</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="confirmar-senha" required minlength="8">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-eye" id="toggleConfirmarSenha" style="cursor: pointer;"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+                        </form>
+                        <div class="text-center mt-3">
+                            <a href="index.html">Já tem uma conta? Faça login</a>
+                        </div>
+                        <div id="success-message" class="alert alert-success mt-3" style="display: none;">
+                            Cadastro realizado com sucesso!
+                        </div>
+                        <div id="error-message" class="alert alert-danger mt-3" style="display: none;">
+                            As senhas não coincidem. Por favor, tente novamente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script>
+        document.getElement
